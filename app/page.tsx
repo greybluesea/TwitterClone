@@ -7,7 +7,7 @@ export default function Home() {
       <div className="fixed top-0 bottom-0 w-full max-w-screen-lg h-full flex">
         <LeftSidebar />
         <main className="w-full flex flex-col h-full">Main Timeline</main>
-        <aside id="RightSidebar" className=" w-70 flex flex-col">
+        <aside id="RightSidebar" className="w-70 flex flex-col">
           RightSidebar
         </aside>
       </div>
