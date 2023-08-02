@@ -54,10 +54,8 @@ const LeftSidebar = () => {
         </Link>
         <ul className="flex flex-col">
           {navItemsArray.map((item) => (
-            <li>
+            <li key={item.title} id={item.title}>
               <Link
-                key={item.title}
-                id={item.title}
                 href={`/${item.title.toLocaleLowerCase()}`}
                 className="flex items-center hover-bg-light py-3 px-8 rounded-full "
               >
