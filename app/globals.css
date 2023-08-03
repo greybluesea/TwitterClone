@@ -4,9 +4,9 @@
 
 @layer components {
   .hover-bg-light {
-    @apply hover:bg-slate-800  hover:text-slate-300 transition duration-200;
+    @apply hover:bg-slate-800 hover:text-slate-300 transition duration-200;
   }
   .hover-opaque {
-    @apply hover:hover:bg-opacity-70 hover:text-slate-300 transition duration-200;
+    @apply hover:bg-opacity-70 hover:text-slate-300 transition duration-200;
   }
 }
