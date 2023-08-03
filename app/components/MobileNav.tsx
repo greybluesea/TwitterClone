@@ -33,16 +33,16 @@ const MobileNav = (props: Props) => {
             key={item.title}
             id={item.title}
             href={`/${item.title.toLocaleLowerCase()}`}
-            className="flex items-center hover-bg-light rounded-full mx-auto"
+            className="hover-bg-light rounded-full"
           >
             <item.icon className="w-7 h-7" />
           </Link>
         ))}
 
         <button className="w-fit text-slate-400 rounded-full text-center hover-opaque">
-          <MdOutlinePostAdd className="w-11 h-11 px-1 " />
+          <MdOutlinePostAdd className="w-11 h-11 " />
         </button>
-        <div className=" my-auto pr-2 pl-1">
+        <div className=" my-auto ">
           <UserButton />
         </div>
       </div>
