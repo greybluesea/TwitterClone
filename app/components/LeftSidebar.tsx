@@ -1,14 +1,12 @@
 import Link from "next/link";
-import React from "react";
 import { AiFillHome } from "react-icons/ai";
-import { BsBookmarkStarFill, BsTwitter, BsThreeDots } from "react-icons/bs";
+import { BsBookmarkStarFill, BsTwitter } from "react-icons/bs";
 import { FaEnvelope, FaMagnifyingGlass, FaUserLarge } from "react-icons/fa6";
-import { CgProfile } from "react-icons/cg";
 
 import { GoBellFill } from "react-icons/go";
-import UserSection from "./UserSection";
+import UserButton from "./UserButton";
 
-const navItemsArray = [
+export const navItemsArray = [
   {
     title: "Home",
     icon: AiFillHome,
@@ -37,13 +35,10 @@ const navItemsArray = [
 
 const LeftSidebar = () => {
   return (
-    <nav
-      className=" w-70 h-screen p-4 text-slate-300 flex flex-col justify-between text-xl border-r-1 border-slate-600"
-      style={{ borderRightWidth: "1px" }}
-    >
+    <nav className="w-70 h-screen p-4 text-slate-300 flex flex-col justify-between text-xl border-r border-slate-600">
       <div
         id="LeftSidebar"
-        className="w-full flex flex-col items-start space-y-1 "
+        className="w-full flex flex-col items-start space-y-1 overflow-hidden"
       >
         <Link
           key={"Twitter"}
@@ -65,14 +60,12 @@ const LeftSidebar = () => {
             </li>
           ))}
         </ul>
-        <button
-          className="w-60 mx-2  bg-sky-600 p-4 rounded-full text-center hover:bg-opacity-70 transition duration-200"
-          style={{ marginTop: "32px" }}
-        >
+        <div className="py-3"></div>
+        <button className="w-60 mx-2  bg-sky-600 p-4 rounded-full text-center hover-opaque">
           Tweet
         </button>
       </div>
-      <UserSection />
+      <UserButton />
     </nav>
   );
 };
