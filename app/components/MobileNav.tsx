@@ -15,7 +15,7 @@ type Props = {};
 
 const MobileNav = (props: Props) => {
   return (
-    <nav className="w-full max-w-screen mx-0 px-2 text-slate-400 flex flex-row justify-between text-xl border-t border-slate-600 overflow-hidden ">
+    <nav className="w-full mx-0 px-2 pr-2.5 text-slate-400 flex flex-row justify-between  border-t border-slate-600 overflow-hidden bg-slate-900">
       <div
         id="MobileNav"
         className="w-full flex flex-row justify-evenly items-center py-2"

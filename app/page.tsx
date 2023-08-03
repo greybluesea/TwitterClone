@@ -16,7 +16,7 @@ export default function Home() {
           </div>
         </div>
         <main className="w-full h-full min-h-screen flex flex-col">
-          <div className="h-full min-h-screen">Main Timeline</div>
+          <div className="h-full min-h-screen">`Main Timeline `</div>
           <div className="sticky bottom-0 flex sm:hidden">
             <MobileNav />
           </div>
