@@ -44,8 +44,8 @@ const MiniLeftSidebar = (props: Props) => {
           ))}
         </ul>
         <div className="py-3"></div>
-        <button className="w-fit  bg-sky-700 p-2 text-slate-400 rounded-full text-center hover-opaque">
-          <MdOutlinePostAdd className="w-9 h-9 " />
+        <button className="sky-button-styling">
+          <MdOutlinePostAdd className="w-9 h-9" />
         </button>
       </div>
       <UserButton />
