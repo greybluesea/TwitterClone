@@ -15,7 +15,7 @@ const TweetComposer = (props: Props) => {
         <input
           type="text"
           name="tweet"
-          className="w-full text-lg placeholder:text-slate-600 bg-transparent py-4 px-2 outline-none border-none"
+          className="w-full text-lg placeholder:text-slate-600 bg-transparent py-3.5 px-2 outline-none border-none"
           placeholder="What's happening?"
         />
 
