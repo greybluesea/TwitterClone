@@ -45,7 +45,7 @@ export default function RootLayout({
             className="w-full h-full min-h-screen max-w-[520px] lg:max-w-[580px] flex flex-col "
           >
             <div className="flex w-full h-full ">{children}</div>
-            <div className="sticky mt-auto w-full bottom-0 left-0 right-0 sm:hidden">
+            <div className="fixed bottom-0 left-0 right-0 sm:hidden">
               <MobileNav />
             </div>
           </main>
