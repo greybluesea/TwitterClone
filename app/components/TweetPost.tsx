@@ -49,7 +49,8 @@ const TweetPost = (props: Props) => {
         </section>
         <section
           id="image or quote"
-          className="w-full bg-slate-400 h-80 rounded-xl mt-3"
+          className="w-full bg-slate-400 rounded-xl mt-3"
+          style={{ aspectRatio: "3/2" }}
         />
         <section
           id="TweetFooter"
