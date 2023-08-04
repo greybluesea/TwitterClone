@@ -48,7 +48,9 @@ const MiniLeftSidebar = (props: Props) => {
           <MdOutlinePostAdd className="w-9 h-9" />
         </button>
       </div>
-      <UserButton />
+      <div className="pt-4">
+        <UserButton />
+      </div>
     </nav>
   );
 };
