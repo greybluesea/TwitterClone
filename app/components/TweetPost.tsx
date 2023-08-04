@@ -1,65 +1,80 @@
 import React from "react";
 import { BsDot, BsThreeDots } from "react-icons/bs";
 import Avatar from "./Avatar";
+import { AiOutlineRetweet } from "react-icons/ai";
+import { IoShareOutline, IoStatsChart } from "react-icons/io5";
 
 type Props = {};
 
 const TweetPost = (props: Props) => {
   return (
-    <>
-      <div className="w-full border-b-[0.5px]  border-slate-600 py-2 px-3 flex space-x-2">
+    <div
+      id="TweetPost"
+      className="flex w-full border-b-[0.5px]  border-slate-600 pt-3 pb-4 pl-2 pr-3  space-x-2"
+    >
+      <div>
         <Avatar />
-        <div id="tweetContent" className="flex flex-col w-full">
-          <div className="flex items-center w-full justify-between">
-            <div className="flex items-center space-x-1 w-full">
-              <div className="font-bold truncate">
-                {/* {tweet.userProfile.fullName ?? ""} */}
-                username
-              </div>
-              <div className="text-slate-500 truncate">
-                @{/* {tweet.userProfile.username} */}userHandle
-              </div>
-              <div className="text-slate-500">
-                <BsDot />
-              </div>
-              <div className="text-slate-500">
-                {/*  {dayjs(tweet.tweetDetails.createdAt).fromNow()} */}
-                datetime
-              </div>
-            </div>
-            <div>
-              <BsThreeDots />
-            </div>
-          </div>
-          <div
-            /*  onClick={() => {
+      </div>
+      <div id="TweetContent" className="flex flex-col w-full">
+        <section
+          id="TweetHeader"
+          className="flex items-center w-full justify-between"
+        >
+          <p className="flex items-center space-x-1 w-full text-slate-500">
+            <span id="username" className="font-bold text-slate-300 truncate">
+              {/* {tweet.userProfile.fullName ?? ""} */}
+              username
+            </span>
+            <span id="userHandle" className="truncate">
+              @{/* {tweet.userProfile.username} */}userHandle
+            </span>
+            <span id="dot">
+              <BsDot />
+            </span>
+            <span id="datetime">
+              {/*  {dayjs(tweet.tweetDetails.createdAt).fromNow()} */}
+              datetime
+            </span>
+          </p>
+          <BsThreeDots />
+        </section>
+        <section
+          id="TweetText"
+          /*  onClick={() => {
             router.push(`/tweet/${tweet.tweetDetails.id}`);
           }} */
-            className="w-full cursor-pointer hover:bg-white/5 transition-all"
-          >
-            {/* {tweet.tweetDetails.text} */} tweetContent
-          </div>
-          {/* <div className="bg-slate-400 aspect-square w-full h-80 rounded-xl mt-2"></div> */}
-          {/*  <div className="flex items-center justify-start space-x-20 mt-2 w-full">
-          <ReplyDialog tweet={tweet} repliesCount={repliesCount} />
-          <div className="rounded-full hover:bg-white/10 transition duration-200 p-3 cursor-pointer">
+          className="w-full cursor-pointer hover-bg-light"
+        >
+          {/* {tweet.tweetDetails.text} */} TweetText
+        </section>
+        <section
+          id="image or quote"
+          className="w-full bg-slate-400 h-80 rounded-xl mt-3"
+        />
+        <section
+          id="TweetFooter"
+          className="w-full flex items-center justify-evenly"
+        >
+          {/* <ReplyDialog tweet={tweet} repliesCount={repliesCount} /> */}
+          <span className="font-sm">reply</span>
+          <button className="p-3 rounded-full hover-bg-light ">
             <AiOutlineRetweet />
-          </div>
-          <LikeButton
+          </button>
+          {/* <LikeButton
             tweetId={tweet.tweetDetails.id}
             likesCount={likesCount}
             isUserHasLiked={hasLiked}
-          />
-          <div className="rounded-full hover:bg-white/10 transition duration-200 p-3 cursor-pointer">
+          /> */}{" "}
+          <span className="font-sm">like</span>
+          <button className="p-3 rounded-full hover-bg-light ">
             <IoStatsChart />
-          </div>
-          <div className="rounded-full hover:bg-white/10 transition duration-200 p-3 cursor-pointer">
+          </button>
+          <button className="p-3 rounded-full hover-bg-light ">
             <IoShareOutline />
-          </div>
-        </div> */}
-        </div>
+          </button>
+        </section>
       </div>
-    </>
+    </div>
   );
 };
 

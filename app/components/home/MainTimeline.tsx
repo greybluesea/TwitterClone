@@ -15,6 +15,8 @@ const MainTimeline = (props: Props) => {
       </h1>
       <TweetComposer />
       <TweetPost />
+      <TweetPost />
+      <TweetPost />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex
         necessitatibus voluptatum perferendis magni doloribus vero. Earum,
