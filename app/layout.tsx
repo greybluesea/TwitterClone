@@ -22,10 +22,13 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          " w-full h-full min-h-screen flex justify-center bg-slate-900 text-slate-200"
+          "w-full h-full min-h-screen flex justify-center bg-slate-900 text-slate-300"
         }
       >
-        <div id="mainframe" className="max-w-screen-lg h-full flex mx-auto">
+        <div
+          id="mainframe"
+          className="w-full max-w-screen-lg h-full flex justify-center"
+        >
           <div id="leftColumn" className="sticky h-full bottom-0 top-0 left-0">
             <div className="hidden sm:flex lg:hidden">
               <MiniLeftSidebar />
@@ -38,7 +41,7 @@ export default function RootLayout({
             id="centerColumn"
             className="w-full max-w-[520px] lg:max-w-[580px] flex flex-col border-x border-slate-600"
           >
-            <div className="w-full h-full min-h-screen">{children}</div>
+            <div className="flex w-full h-full min-h-screen">{children}</div>
             <div className="sticky bottom-0 flex sm:hidden">
               <MobileNav />
             </div>
