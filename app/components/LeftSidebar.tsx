@@ -46,7 +46,7 @@ const LeftSidebar = () => {
     >
       <div
         id="LeftSidebar"
-        className="w-full flex flex-col items-start space-y-1 overflow-hidden"
+        className="w-full flex flex-col items-start space-y-1 overflow-auto pb-8"
       >
         <Link
           key={"Twitter"}

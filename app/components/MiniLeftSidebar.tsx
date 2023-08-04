@@ -22,7 +22,7 @@ const MiniLeftSidebar = (props: Props) => {
     >
       <div
         id="MiniLeftSidebar"
-        className="w-full flex flex-col items-center space-y-1 overflow-hidden"
+        className="w-full flex flex-col items-center space-y-1 overflow-auto pb-14"
       >
         <Link
           key={"Twitter"}
