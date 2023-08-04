@@ -1,6 +1,7 @@
 import React from "react";
 import { BsThreeDots } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
+import Avatar from "./Avatar";
 
 type Props = {};
 
@@ -18,7 +19,7 @@ const UserButton = (props: Props) => {
         <BsThreeDots className="m-0 ml-2" />
       </button>
       <button className="flex lg:hidden rounded-full hover-opaque  cursor-pointer flex-row justify-between items-center">
-        <CgProfile className="w-10 h-10" />
+        <Avatar />
       </button>
     </>
   );

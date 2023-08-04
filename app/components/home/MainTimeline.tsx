@@ -1,3 +1,4 @@
+import TweetPost from "../TweetPost";
 import TweetComposer from "./TweetComposer";
 
 type Props = {};
@@ -13,6 +14,7 @@ const MainTimeline = (props: Props) => {
         Home
       </h1>
       <TweetComposer />
+      <TweetPost />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex
         necessitatibus voluptatum perferendis magni doloribus vero. Earum,
