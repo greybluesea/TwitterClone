@@ -27,11 +27,11 @@ export default function RootLayout({
       >
         <div
           id="mainframe"
-          className="w-full max-w-screen-lg h-full flex justify-center"
+          className="w-full max-w-screen-xl h-full flex justify-center"
         >
-          <div
+          <aside
             id="leftColumn"
-            className="sticky h-full bottom-0 top-0 left-0 border-r border-slate-600"
+            className="sticky h-full bottom-0 top-0  border-r border-slate-600"
           >
             <div className="hidden sm:flex lg:hidden ">
               <MiniLeftSidebar />
@@ -39,19 +39,19 @@ export default function RootLayout({
             <div className="hidden lg:block">
               <LeftSidebar />
             </div>
-          </div>
+          </aside>
           <main
             id="centerColumn"
             className="w-full h-full min-h-screen max-w-[520px] lg:max-w-[580px] flex flex-col "
           >
             <div className="flex w-full h-full ">{children}</div>
-            <div className="fixed bottom-0 left-0 right-0 sm:hidden">
+            <div className="sticky mt-auto w-full bottom-0 left-0 right-0 sm:hidden">
               <MobileNav />
             </div>
           </main>
           <aside
-            id="RightSidebar"
-            className="w-70 hidden md:flex flex-col border-l border-slate-600"
+            id="rightColumn"
+            className="w-70 sticky h-full min-h-screen bottom-0 top-0 hidden md:flex flex-col border-l border-slate-600"
           >
             RightSidebar
           </aside>

@@ -37,7 +37,7 @@ const LeftSidebar = () => {
   return (
     <nav
       className={
-        "w-70 h-screen p-4 text-slate-400 flex flex-col justify-between text-xl " /* + " border-r border-slate-600" */
+        "w-70 h-screen py-4 text-slate-400 flex flex-col justify-between text-xl " /* + " border-r border-slate-600" */
       }
     >
       <div
