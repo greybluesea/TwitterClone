@@ -12,11 +12,11 @@ const TweetPost = (props: Props) => {
         <div id="tweetContent" className="flex flex-col w-full">
           <div className="flex items-center w-full justify-between">
             <div className="flex items-center space-x-1 w-full">
-              <div className="font-bold">
+              <div className="font-bold truncate">
                 {/* {tweet.userProfile.fullName ?? ""} */}
                 username
               </div>
-              <div className="text-slate-500">
+              <div className="text-slate-500 truncate">
                 @{/* {tweet.userProfile.username} */}userHandle
               </div>
               <div className="text-slate-500">
@@ -24,7 +24,7 @@ const TweetPost = (props: Props) => {
               </div>
               <div className="text-slate-500">
                 {/*  {dayjs(tweet.tweetDetails.createdAt).fromNow()} */}
-                date and time
+                datetime
               </div>
             </div>
             <div>
