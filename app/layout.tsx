@@ -53,7 +53,7 @@ export default function RootLayout({
             id="rightColumn"
             className="w-70 sticky h-full min-h-screen bottom-0 top-0 hidden md:flex flex-col border-l border-slate-600"
           >
-            RightSidebar
+            RightSidebarRightSidebarRightSidebar
           </aside>
         </div>
       </body>

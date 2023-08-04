@@ -27,16 +27,21 @@ const MobileNav = (props: Props) => {
           <BsTwitter className="w-8 h-8 text-sky-500" />
         </Link> */}
 
-      {navItemsArray.map((item) => (
-        <Link
-          key={item.title}
-          id={item.title}
-          href={`/${item.title.toLocaleLowerCase()}`}
-          className="hover-bg-light rounded-full"
-        >
-          <item.icon className="w-8 h-8" />
-        </Link>
-      ))}
+      {navItemsArray.map(
+        (item) =>
+          item.title !== "messages" &&
+          item.title !== "bookmarks" &&
+          item.title !== "profile" && (
+            <Link
+              key={item.title}
+              id={item.title}
+              href={`/${item.title.toLocaleLowerCase()}`}
+              className="hover-bg-light rounded-full"
+            >
+              <item.icon className="w-8 h-8" />
+            </Link>
+          )
+      )}
 
       <button className=" text-slate-400 rounded-full text-center hover-opaque">
         <MdOutlinePostAdd className="w-11 h-11 " />

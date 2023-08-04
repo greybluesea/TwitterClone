@@ -8,30 +8,34 @@ import UserButton from "./UserButton";
 
 export const navItemsArray = [
   {
-    title: "Home",
+    title: "home",
     icon: AiFillHome,
   },
   {
-    title: "Explore",
+    title: "explore",
     icon: FaMagnifyingGlass,
   },
   {
-    title: "Notifications",
+    title: "notifications",
     icon: GoBellFill,
   },
   {
-    title: "Messages",
+    title: "messages",
     icon: FaEnvelope,
   },
   {
-    title: "Bookmarks",
+    title: "bookmarks",
     icon: BsBookmarkStarFill,
   },
   {
-    title: "Profile",
+    title: "profile",
     icon: FaUserLarge,
   },
 ];
+
+const capitalizeFirstLetter = (str: string) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
 
 const LeftSidebar = () => {
   return (
@@ -55,11 +59,11 @@ const LeftSidebar = () => {
           {navItemsArray.map((item) => (
             <li key={item.title} id={item.title}>
               <Link
-                href={`/${item.title.toLocaleLowerCase()}`}
+                href={`/${item.title}`}
                 className="flex items-center hover-bg-light py-3 px-8 rounded-full "
               >
                 <item.icon className="w-9 h-9" />
-                <p className="pl-4">{item.title}</p>
+                <p className="pl-4">{capitalizeFirstLetter(item.title)}</p>
               </Link>
             </li>
           ))}
