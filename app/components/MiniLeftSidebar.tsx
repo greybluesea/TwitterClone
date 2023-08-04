@@ -17,7 +17,7 @@ const MiniLeftSidebar = (props: Props) => {
   return (
     <nav
       className={
-        "w-70 h-screen mx-0 p-3 pb-6 px-2 text-slate-400  flex flex-col justify-between text-xl " /*  + " border-r border-slate-600" */
+        "w-70 h-screen mx-0 p-3 pb-6 px-2 text-slate-400  flex flex-col justify-between text-xl items-center" /*  + " border-r border-slate-600" */
       }
     >
       <div
