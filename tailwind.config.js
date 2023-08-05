@@ -21,6 +21,8 @@ module.exports = {
           SECONDARY: "var(--BGCOLOR-SECONDARY)",
           TERTIARY: "var(--BGCOLOR-TERTIARY)",
         },
+
+        BORDER: "var(--BORDER)",
       },
     },
     screens: {
