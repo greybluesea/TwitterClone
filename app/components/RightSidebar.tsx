@@ -32,15 +32,15 @@ const RightSidebar = (props: Props) => {
         id="what's trending"
         className="flex flex-col rounded-xl bg-BGCOLOR-SECONDARY mt-4 py-4 "
       >
-        <h3 className="font-bold text-xl m-4">What’s trending</h3>
+        <h3 className="font-bold text-xl mx-4 my-2">What’s trending</h3>
         <div id="wrapper for trending">
           {Array.from({ length: 5 }).map((_, i) => (
             <p
               key={i}
               className="flex justify-between items-center hover-bg-lighter p-4 "
             >
-              <span className=" font-bold text-lg truncate">
-                #trending{i + 1}trending
+              <span className="before:content-['#'] font-bold text-lg truncate">
+                trending{i + 1}trendingtrending
               </span>
               <span className="text-md text-BRAND whitespace-nowrap after:content-['posts'] after:ml-1 after:text-SECONDARY">
                 35.4k
@@ -57,9 +57,9 @@ const RightSidebar = (props: Props) => {
 
       <section
         id="who to follow"
-        className="flex flex-col rounded-xl bg-BGCOLOR-SECONDARY mt-4"
+        className="flex flex-col rounded-xl bg-BGCOLOR-SECONDARY mt-4 py-4"
       >
-        <h3 className="font-bold text-xl my-4 px-4">Who to follow</h3>
+        <h3 className="font-bold text-xl my-2 px-4">Who to follow</h3>
         <div id="wrapper for users to follow">
           {Array.from({ length: 3 }).map((_, i) => (
             <div
@@ -75,9 +75,7 @@ const RightSidebar = (props: Props) => {
                 </div>
               </div>
 
-              <button className="rounded-full px-6 py-2 bg-SECONDARY text-BGCOLOR-SECONDARY hover:bg-PRIMARY font-semibold">
-                Follow
-              </button>
+              <button className="secondary-button">Follow</button>
             </div>
           ))}
         </div>

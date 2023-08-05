@@ -49,7 +49,7 @@ const TweetPost = (props: Props) => {
         </section>
         <section
           id="image or quote"
-          className="w-full bg-slate-400 aspect-[3/2] rounded-xl mt-3"
+          className="w-full bg-SECONDARY aspect-[3/2] rounded-xl mt-3"
         />
         <section
           id="TweetFooter"

@@ -28,10 +28,15 @@
   .hover-opaque {
     @apply hover:bg-opacity-70 hover:text-PRIMARY transition duration-200;
   }
+
   .sky-button-styling {
     @apply w-fit  bg-BRAND-SECONDARY p-2 text-SECONDARY rounded-full font-semibold text-center hover:text-PRIMARY hover:bg-BRAND transition duration-200;
   }
-  .text-lighter-on-hover {
+  .secondary-button {
+    @apply rounded-full px-6 py-2 bg-SECONDARY text-BGCOLOR-SECONDARY hover:bg-PRIMARY font-semibold;
+  }
+
+  .text-light-on-hover {
     @apply text-SECONDARY hover:text-PRIMARY transition duration-200;
   }
 
