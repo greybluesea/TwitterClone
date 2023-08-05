@@ -80,15 +80,14 @@ const RightSidebar = (props: Props) => {
           ))}
         </div>
       </section>
-      <footer>
-        <ul className="flex flex-col items-center py-6">
-          <li>Drizzle + Supabase + PostgreSQL</li>
-          <li>Next.js</li>
 
-          <li>Learned from Soni Pranjal</li>
-          <li> Powered by greybluesea</li>
-        </ul>
-      </footer>
+      <ul className="flex flex-col items-center my-auto">
+        <li>Drizzle + Supabase + PostgreSQL</li>
+        <li>Next.js</li>
+
+        <li>Learned from Soni Pranjal</li>
+        <li> Powered by greybluesea</li>
+      </ul>
     </aside>
   );
 };
