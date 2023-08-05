@@ -40,7 +40,7 @@ const RightSidebar = (props: Props) => {
               key={i}
               className="flex justify-between items-center hover-bg-lighter p-4 space-x-2 "
             >
-              <span className="before:content-['#'] font-bold text-lg truncate">
+              <span className="before:content-['#'] before:text-BRAND font-bold text-lg truncate">
                 trending{i + 1}trendingtrending
               </span>
               <span className="text-md text-BRAND whitespace-nowrap after:content-['posts'] after:ml-1 after:text-SECONDARY">
