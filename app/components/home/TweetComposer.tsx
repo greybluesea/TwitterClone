@@ -18,12 +18,13 @@ const TweetComposer = (props: Props) => {
           name="tweet"
           className="w-full text-lg placeholder:text-slate-600 bg-transparent py-3.5 px-2 outline-none border-none"
           placeholder="What's happening?"
+          autoFocus
         />
 
         <div className="w-full flex justify-end items-center ">
           <button
             type="submit"
-            className="sky-button-styling px-3 pt-1.5 pb-2 w-full max-w-[90px] "
+            className="sky-button-styling  px-3 pt-1.5 pb-2 w-full max-w-[90px] "
           >
             Tweet
           </button>

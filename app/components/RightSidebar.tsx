@@ -12,17 +12,17 @@ const RightSidebar = (props: Props) => {
     >
       <section
         id="searchBox on RightSidebar"
-        className="w-full flex flex-row-reverse items-center bg-slate-700 rounded-full group focus-within-sky-border"
+        className="w-full flex flex-row-reverse items-center bg-BGCOLOR-TERTIARY rounded-full group focus-within-sky-ring"
       >
         <input
           id="searchBox"
           type="text"
           placeholder="Search Twitter"
-          className="outline-none bg-transparent w-full text-lg py-3 pr-4 placeholder:text-slate-400 peer"
+          className="outline-none bg-transparent w-full text-lg py-3 pr-4 placeholder:text-SECONDARY peer"
         />
         <label
           htmlFor="searchBox"
-          className="grid content-center pl-5 pr-3 text-slate-400 peer-focus:text-sky-600"
+          className="grid content-center pl-5 pr-3 text-SECONDARY peer-focus:text-BRAND"
         >
           <BsSearch className="w-5 h-5" />
         </label>
@@ -30,7 +30,7 @@ const RightSidebar = (props: Props) => {
 
       <section
         id="what's trending"
-        className="flex flex-col rounded-xl bg-slate-800 mt-4 py-4 "
+        className="flex flex-col rounded-xl bg-BGCOLOR-SECONDARY mt-4 py-4 "
       >
         <h3 className="font-bold text-xl m-4">What’s trending</h3>
         <div id="wrapper for trending">
@@ -42,7 +42,9 @@ const RightSidebar = (props: Props) => {
               <span className=" font-bold text-lg truncate">
                 #trending{i + 1}trending
               </span>
-              <span className="text-md whitespace-nowrap">35.4k likes</span>
+              <span className="text-md text-BRAND whitespace-nowrap after:content-['posts'] after:ml-1 after:text-SECONDARY">
+                35.4k
+              </span>
             </p>
           ))}
         </div>
@@ -55,7 +57,7 @@ const RightSidebar = (props: Props) => {
 
       <section
         id="who to follow"
-        className="flex flex-col rounded-xl bg-slate-800 mt-4"
+        className="flex flex-col rounded-xl bg-BGCOLOR-SECONDARY mt-4"
       >
         <h3 className="font-bold text-xl my-4 px-4">Who to follow</h3>
         <div id="wrapper for users to follow">
@@ -68,12 +70,12 @@ const RightSidebar = (props: Props) => {
               <div className="flex items-center space-x-2">
                 <Avatar />
                 <div className="flex flex-col">
-                  <p className="font-bold text-white">Other User</p>
-                  <p className="text-gray-500 text-xs">@otheruser1232</p>
+                  <p className="font-bold text-PRIMARY">Other User</p>
+                  <p className="text-SECONDARY text-xs">@otheruser1232</p>
                 </div>
               </div>
 
-              <button className="rounded-full px-6 py-2 bg-slate-300 text-slate-800 hover:bg-slate-400 font-semibold">
+              <button className="rounded-full px-6 py-2 bg-SECONDARY text-BGCOLOR-SECONDARY hover:bg-PRIMARY font-semibold">
                 Follow
               </button>
             </div>

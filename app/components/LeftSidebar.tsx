@@ -69,7 +69,7 @@ const LeftSidebar = () => {
           ))}
         </ul>
         <div className="py-3"></div>
-        <button className="w-60 mx-2 bg-sky-700 p-4 rounded-full text-center hover-opaque text-slate-300 font-semibold">
+        <button className="sky-button-styling w-60 mx-2 p-4 rounded-full text-center  font-semibold">
           Tweet
         </button>
       </div>

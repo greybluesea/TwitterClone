@@ -2,30 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .hover-bg-light {
-    @apply hover:bg-slate-800 hover:text-slate-300 transition duration-200;
-  }
-  .hover-bg-lighter {
-    @apply hover:bg-slate-700 hover:text-slate-300 transition duration-200 cursor-pointer;
-  }
-  .hover-opaque {
-    @apply hover:bg-opacity-70 hover:text-slate-300 transition duration-200;
-  }
-  .sky-button-styling {
-    @apply w-fit  bg-sky-700 p-2 text-slate-400 rounded-full text-lg font-semibold text-center hover-opaque;
-  }
-  .text-lighter-on-hover {
-    @apply text-slate-400 hover:text-slate-300 transition duration-200;
-  }
+@layer base {
+  :root {
+    --BRAND: rgb(2 132 199); /* sky-600 */
+    --BRAND-SECONDARY: rgb(3 105 161); /* sky-700 */
 
-  .focus-within-sky-border {
-    @apply focus-within:outline-none focus-within:ring-1 ring-sky-600 transition duration-200;
+    --BORDER: rgb(71 85 105); /*  slate-600 */
+
+    --PRIMARY: rgb(203 213 225); /* slate-300 */
+    --SECONDARY: rgb(148 163 184); /*slate-400*/
+
+    --BGCOLOR-PRIMARY: rgb(15 23 42); /*slate-900  */
+    --BGCOLOR-SECONDARY: rgb(30 41 59); /*slate-800  */
+    --BGCOLOR-TERTIARY: rgb(51 65 85); /* slate-700 */
   }
 }
 
-base {
-  :root {
-    --primary: sky-500;
+@layer components {
+  .hover-bg-light {
+    @apply hover:bg-BGCOLOR-SECONDARY hover:text-PRIMARY transition duration-200;
+  }
+  .hover-bg-lighter {
+    @apply hover:bg-BGCOLOR-TERTIARY hover:text-PRIMARY transition duration-200 cursor-pointer;
+  }
+  .hover-opaque {
+    @apply hover:bg-opacity-70 hover:text-PRIMARY transition duration-200;
+  }
+  .sky-button-styling {
+    @apply w-fit  bg-BRAND-SECONDARY p-2 text-SECONDARY rounded-full font-semibold text-center hover:text-PRIMARY hover:bg-BRAND transition duration-200;
+  }
+  .text-lighter-on-hover {
+    @apply text-SECONDARY hover:text-PRIMARY transition duration-200;
+  }
+
+  .focus-within-sky-ring {
+    @apply focus-within:outline-none focus-within:ring-1 ring-BRAND transition duration-200;
   }
 }

@@ -10,7 +10,7 @@ const TweetPost = (props: Props) => {
   return (
     <div
       id="TweetPost"
-      className="flex w-full border-b-[0.5px]  border-slate-600 pt-3 pb-4 pl-2 pr-3  space-x-2"
+      className="flex w-full border-b-[0.5px]  border-BORDER pt-3 pb-4 pl-2 pr-3  space-x-2"
     >
       <div>
         <Avatar />
@@ -20,8 +20,8 @@ const TweetPost = (props: Props) => {
           id="TweetHeader"
           className="flex items-center w-full justify-between"
         >
-          <p className="flex items-center space-x-1 w-full text-slate-500">
-            <span id="username" className="font-bold text-slate-300 truncate">
+          <p className="flex items-center space-x-1 w-full text-SECONDARY">
+            <span id="username" className="font-bold text-PRIMARY truncate">
               {/* {tweet.userProfile.fullName ?? ""} */}
               username
             </span>

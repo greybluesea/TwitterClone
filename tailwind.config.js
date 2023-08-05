@@ -6,7 +6,23 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        BRAND: {
+          DEFAULT: "var(--BRAND)",
+          SECONDARY: "var(--BRAND-SECONDARY)",
+        },
+
+        PRIMARY: "var(--PRIMARY)",
+        SECONDARY: "var(--SECONDARY)",
+
+        BGCOLOR: {
+          DEFAULT: "var(--BGCOLOR-PRIMARY)",
+          SECONDARY: "var(--BGCOLOR-SECONDARY)",
+          TERTIARY: "var(--BGCOLOR-TERTIARY)",
+        },
+      },
+    },
     screens: {
       sm: "500px",
       // => @media (min-width: 640px) { ... }
