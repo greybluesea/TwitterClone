@@ -1,6 +1,7 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
 import Avatar from "./Avatar";
+import UserToFollow from "./UserToFollow";
 
 type Props = {};
 
@@ -37,7 +38,7 @@ const RightSidebar = (props: Props) => {
           {Array.from({ length: 5 }).map((_, i) => (
             <p
               key={i}
-              className="flex justify-between items-center hover-bg-lighter p-4 "
+              className="flex justify-between items-center hover-bg-lighter p-4 space-x-2 "
             >
               <span className="before:content-['#'] font-bold text-lg truncate">
                 trending{i + 1}trendingtrending
@@ -62,21 +63,7 @@ const RightSidebar = (props: Props) => {
         <h3 className="font-bold text-xl my-2 px-4">Who to follow</h3>
         <div id="wrapper for users to follow">
           {Array.from({ length: 3 }).map((_, i) => (
-            <div
-              id="user to follow"
-              key={i}
-              className="p-4 flex justify-between items-center hover-bg-lighter"
-            >
-              <div className="flex items-center space-x-2">
-                <Avatar />
-                <div className="flex flex-col">
-                  <p className="font-bold text-PRIMARY">Other User</p>
-                  <p className="text-SECONDARY text-xs">@otheruser1232</p>
-                </div>
-              </div>
-
-              <button className="secondary-button">Follow</button>
-            </div>
+            <UserToFollow key={i} />
           ))}
         </div>
       </section>
