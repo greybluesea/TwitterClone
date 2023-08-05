@@ -32,7 +32,7 @@ const RightSidebar = (props: Props) => {
         id="what's trending"
         className="flex flex-col rounded-xl bg-slate-800 mt-4 py-4 "
       >
-        <h3 className="font-bold text-xl m-4">What's trending</h3>
+        <h3 className="font-bold text-xl m-4">What’s trending</h3>
         <div className="">
           {Array.from({ length: 5 }).map((_, i) => (
             <p
