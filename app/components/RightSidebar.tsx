@@ -8,7 +8,7 @@ const RightSidebar = (props: Props) => {
   return (
     <aside
       id="rightColumn"
-      className="w-[280px] sticky h-full min-h-screen bottom-0 top-0 hidden md:flex flex-col border-l border-slate-600 overflow-y-auto px-2 py-4"
+      className="w-[320px] sticky h-full min-h-screen bottom-0 top-0 hidden md:flex flex-col border-l border-slate-600 overflow-y-auto px-2 py-4"
     >
       <section
         id="searchBox on RightSidebar"
@@ -33,11 +33,11 @@ const RightSidebar = (props: Props) => {
         className="flex flex-col rounded-xl bg-slate-800 mt-4 py-4 "
       >
         <h3 className="font-bold text-xl m-4">What’s trending</h3>
-        <div className="">
+        <div id="wrapper for trending">
           {Array.from({ length: 5 }).map((_, i) => (
             <p
               key={i}
-              className="flex justify-between items-center hover-bg-lighter p-4 rounded-full"
+              className="flex justify-between items-center hover-bg-lighter p-4 "
             >
               <span className=" font-bold text-lg truncate">
                 #trending{i + 1}trending
@@ -53,29 +53,42 @@ const RightSidebar = (props: Props) => {
         </div>
       </section>
 
-      <div className="flex flex-col rounded-xl bg-slate-800 mt-4">
+      <section
+        id="who to follow"
+        className="flex flex-col rounded-xl bg-slate-800 mt-4"
+      >
         <h3 className="font-bold text-xl my-4 px-4">Who to follow</h3>
-        <div>
+        <div id="wrapper for users to follow">
           {Array.from({ length: 3 }).map((_, i) => (
             <div
+              id="user to follow"
               key={i}
-              className="hover:bg-white/10 p-4 flex justify-between items-center last:rounded-b-xl transition duration-200"
+              className="p-4 flex justify-between items-center hover-bg-lighter"
             >
               <div className="flex items-center space-x-2">
                 <Avatar />
                 <div className="flex flex-col">
-                  <div className="font-bold text-white">Other User</div>
-                  <div className="text-gray-500 text-xs">@otheruser1232</div>
+                  <p className="font-bold text-white">Other User</p>
+                  <p className="text-gray-500 text-xs">@otheruser1232</p>
                 </div>
               </div>
 
-              <button className="rounded-full px-6 py-2 bg-white text-neutral-950">
+              <button className="rounded-full px-6 py-2 bg-slate-300 text-slate-800 hover:bg-slate-400 font-semibold">
                 Follow
               </button>
             </div>
           ))}
         </div>
-      </div>
+      </section>
+      <footer>
+        <ul className="flex flex-col items-center py-6">
+          <li>Drizzle + Supabase + PostgreSQL</li>
+          <li>Next.js</li>
+
+          <li>Learned from Soni Pranjal</li>
+          <li> Powered by greybluesea</li>
+        </ul>
+      </footer>
     </aside>
   );
 };
