@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import LeftSidebar from "./components/LeftSidebar";
 import MiniLeftSidebar from "./components/MiniLeftSidebar";
 import MobileNav from "./components/MobileNav";
+import RightSidebar from "./components/RightSidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,12 +50,7 @@ export default function RootLayout({
               <MobileNav />
             </div>
           </main>
-          <aside
-            id="rightColumn"
-            className="w-70 sticky h-full min-h-screen bottom-0 top-0 hidden md:flex flex-col border-l border-slate-600"
-          >
-            RightSidebarRightSidebarRightSidebar
-          </aside>
+          <RightSidebar />
         </div>
       </body>
     </html>

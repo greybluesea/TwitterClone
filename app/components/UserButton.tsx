@@ -10,7 +10,7 @@ const UserButton = (props: Props) => {
     <>
       <button className="hidden lg:flex w-60 mx-2 mt-4 py-2 px-6 rounded-full hover-bg-light  cursor-pointer  flex-row justify-between items-center">
         <div className="flex items-center truncate space-x-1">
-          <CgProfile className="w-14 h-14" />
+          <Avatar size={14} />
           <div className="text-left text-sm max-w-20 truncate">
             <p className="flex font-semibold truncate">CurrentUser</p>
             <p className="flex truncate max-w-20">@CurrentUserCurrentUser</p>

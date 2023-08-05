@@ -1,10 +1,12 @@
 import React from "react";
 import { CgProfile } from "react-icons/cg";
 
-type Props = {};
+type Props = {
+  size?: number;
+};
 
-const Avatar = (props: Props) => {
-  return <CgProfile className="w-10 h-10 text-slate-400 " />;
+const Avatar = ({ size = 10 }: Props) => {
+  return <CgProfile className={`w-${size} h-${size} text-slate-400`} />;
 };
 
 export default Avatar;
