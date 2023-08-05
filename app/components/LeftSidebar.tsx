@@ -41,12 +41,12 @@ const LeftSidebar = () => {
   return (
     <nav
       className={
-        "w-70 h-screen py-4 text-slate-400 flex flex-col justify-between text-xl " /* + " border-r border-slate-600" */
+        "w-70 h-screen py-4 text-slate-400 flex flex-col justify-between " /* + " border-r border-slate-600" */
       }
     >
       <div
         id="LeftSidebar"
-        className="w-full flex flex-col items-start space-y-1 overflow-auto pb-8"
+        className="w-full flex flex-col items-start space-y-1 overflow-auto pb-8 text-xl"
       >
         <Link
           key={"Twitter"}

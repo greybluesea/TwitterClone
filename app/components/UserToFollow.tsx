@@ -7,14 +7,19 @@ const UserToFollow = (props: Props) => {
   return (
     <div
       id="user to follow"
-      className="p-4 flex justify-between items-center hover-bg-lighter"
+      className="p-4 flex justify-between items-center space-x-1 hover-bg-lighter"
     >
-      <div className="flex items-center space-x-2">
-        <Avatar />
-        <div className="flex flex-col">
-          <p className="font-bold text-PRIMARY">Other User</p>
-          <p className="text-SECONDARY text-sm">@otheruser1232</p>
-        </div>
+      <div>
+        <Avatar size={11} />
+      </div>
+
+      <div className=" flex flex-col justify-center truncate">
+        <p className="font-bold leading-5 text-PRIMARY truncate ">
+          Other User Other User
+        </p>
+        <p className="text-SECONDARY leading-5  before:content-['@'] truncate">
+          otheruser1232 Other User Other User
+        </p>
       </div>
 
       <button className="secondary-button">Follow</button>

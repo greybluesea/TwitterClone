@@ -36,8 +36,8 @@
     @apply rounded-full px-6 py-2 bg-SECONDARY text-BGCOLOR-SECONDARY hover:bg-PRIMARY font-semibold;
   }
 
-  .text-light-on-hover {
-    @apply text-SECONDARY hover:text-PRIMARY transition duration-200;
+  .hover-text-light {
+    @apply hover:text-PRIMARY transition duration-200;
   }
 
   .focus-within-sky-ring {

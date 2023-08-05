@@ -8,18 +8,22 @@ type Props = {};
 const UserButton = (props: Props) => {
   return (
     <>
-      <button className="hidden w-[240px] lg:flex lg:flex-row justify-between items-center space-x-1  mt-4 py-2 px-6 rounded-full hover-bg-light  cursor-pointer  ">
+      <button className="hidden w-[240px] lg:flex lg:flex-row justify-between items-center space-x-1 p-4 rounded-full hover-bg-light">
         <div>
           <Avatar size={11} />
         </div>
-        <div className="text-left w-full text-sm truncate">
-          <p className=" font-semibold truncate">CurrentUser</p>
-          <p className=" truncate ">@CurrentUserCurrentUser</p>
+        <div className="text-md truncate">
+          <p className="font-semibold leading-5 truncate">
+            CurrentUser CurrentUser
+          </p>
+          <p className="leading-5 before:content-['@'] truncate ">
+            CurrentUserCurrentUser
+          </p>
         </div>
 
-        <BsThreeDots className="m-0 ml-2" />
+        <BsThreeDots className="w-6 h-6 " />
       </button>
-      <button className="flex lg:hidden rounded-full hover-opaque  cursor-pointer flex-row justify-between items-center">
+      <button className=" lg:hidden hover-text-light">
         <Avatar />
       </button>
     </>
