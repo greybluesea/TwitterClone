@@ -12,17 +12,17 @@ const RightSidebar = (props: Props) => {
     >
       <section
         id="searchBox on RightSidebar"
-        className="w-full flex flex-row-reverse items-center bg-slate-700 rounded-full group "
+        className="w-full flex flex-row-reverse items-center bg-slate-700 rounded-full group focus-within-sky-border"
       >
         <input
           id="searchBox"
           type="text"
           placeholder="Search Twitter"
-          className="outline-none bg-transparent w-full  text-lg py-3 pr-4 placeholder:text-slate-400 peer"
+          className="outline-none bg-transparent w-full text-lg py-3 pr-4 placeholder:text-slate-400 peer"
         />
         <label
           htmlFor="searchBox"
-          className="grid content-center pl-5 pr-3 text-slate-400 peer-focus:text-slate-300"
+          className="grid content-center pl-5 pr-3 text-slate-400 peer-focus:text-sky-600"
         >
           <BsSearch className="w-5 h-5" />
         </label>

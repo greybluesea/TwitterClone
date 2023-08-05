@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Avatar = ({ size = 10 }: Props) => {
-  return <CgProfile className={`w-${size} h-${size} text-slate-400`} />;
+  return <CgProfile className={`w-${size}  h-${size}  text-slate-400`} />;
 };
 
 export default Avatar;

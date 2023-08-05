@@ -18,6 +18,10 @@
   .text-lighter-on-hover {
     @apply text-slate-400 hover:text-slate-300 transition duration-200;
   }
+
+  .focus-within-sky-border {
+    @apply focus-within:outline-none focus-within:ring-1 ring-sky-600 transition duration-200;
+  }
 }
 
 base {
