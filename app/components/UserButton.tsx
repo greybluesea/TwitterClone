@@ -10,7 +10,7 @@ const UserButton = (props: Props) => {
     <>
       <button className="hidden w-[240px] lg:flex lg:flex-row justify-between items-center space-x-1 p-4 rounded-full hover-bg-light">
         <div>
-          <Avatar size={11} />
+          <Avatar size={12} />
         </div>
         <div className="text-md truncate">
           <p className="font-semibold leading-5 truncate">

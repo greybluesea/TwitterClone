@@ -10,7 +10,7 @@ const UserToFollow = (props: Props) => {
       className="p-4 flex justify-between items-center space-x-1 hover-bg-lighter"
     >
       <div>
-        <Avatar size={11} />
+        <Avatar />
       </div>
 
       <div className=" flex flex-col justify-center truncate">

@@ -9,7 +9,7 @@ const RightSidebar = (props: Props) => {
   return (
     <aside
       id="rightColumn"
-      className="w-[320px] text-SECONDARY sticky h-full min-h-screen bottom-0 top-0 hidden md:flex flex-col  border-slate-600 overflow-y-auto px-2 py-4"
+      className="min-w-[320px] max-w-[320px] text-SECONDARY sticky h-screen bottom-0 top-0 hidden md:flex flex-col px-2 py-4 overflow-y-auto"
     >
       <section
         id="searchBox on RightSidebar"
@@ -58,7 +58,7 @@ const RightSidebar = (props: Props) => {
 
       <section
         id="who to follow"
-        className="flex flex-col rounded-xl bg-BGCOLOR-SECONDARY mt-4 py-4"
+        className="flex flex-col rounded-xl bg-BGCOLOR-SECONDARY mt-4 mb-2 py-4"
       >
         <h3 className="font-bold text-xl my-2 px-4">Who to follow</h3>
         <div id="wrapper for users to follow">
@@ -68,7 +68,7 @@ const RightSidebar = (props: Props) => {
         </div>
       </section>
 
-      <ul className="flex flex-col items-center my-auto">
+      <ul className="flex flex-col items-center my-auto ">
         <li>Drizzle + Supabase + PostgreSQL</li>
         <li>Next.js</li>
 

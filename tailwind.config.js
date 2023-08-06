@@ -26,10 +26,10 @@ module.exports = {
       },
     },
     screens: {
-      sm: "500px",
+      sm: "560px",
       // => @media (min-width: 640px) { ... }
 
-      md: "768px",
+      md: "880px",
       // => @media (min-width: 768px) { ... }
 
       lg: "1024px",

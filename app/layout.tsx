@@ -43,7 +43,7 @@ export default function RootLayout({
           </aside>
           <main
             id="centerColumn"
-            className="w-full h-full min-h-screen max-w-[520px] lg:max-w-[580px] flex flex-col "
+            className=" h-full min-h-screen max-w-[580px] flex flex-col "
           >
             <div className="flex w-full h-full pb-20 ">{children}</div>
             <div className="fixed bottom-0 left-0 right-0 sm:hidden">
