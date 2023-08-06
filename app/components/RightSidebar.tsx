@@ -1,6 +1,4 @@
-import React from "react";
 import { BsSearch } from "react-icons/bs";
-import Avatar from "./Avatar";
 import UserToFollow from "./UserToFollow";
 
 type Props = {};
@@ -43,8 +41,8 @@ const RightSidebar = (props: Props) => {
               <span className="before:content-['#'] before:text-BRAND font-bold text-lg truncate">
                 trending{i + 1}trendingtrending
               </span>
-              <span className="text-md text-BRAND whitespace-nowrap after:content-['posts'] after:ml-1 after:text-SECONDARY">
-                35.4k
+              <span className="text-md text-BRAND whitespace-nowrap after:content-[''] after:ml-1 after:text-SECONDARY">
+                {`${i + 1}${i + 1}.${i + 1}k`}
               </span>
             </p>
           ))}
@@ -69,10 +67,7 @@ const RightSidebar = (props: Props) => {
       </section>
 
       <ul className="flex flex-col items-center my-auto ">
-        <li>Drizzle + PostgreSQL + Supabase Auth</li>
-        <li>Next.js</li>
-        <li>Learned from Soni</li>
-        <li> Powered by greybluesea</li>
+        <li>only UI for now</li>
       </ul>
     </aside>
   );
