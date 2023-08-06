@@ -46,7 +46,7 @@ const LeftSidebar = () => {
   return (
     <nav
       className={
-        "w-70 h-screen py-4 text-slate-400 flex flex-col justify-between " /* + " border-r border-slate-600" */
+        "w-60 h-screen py-4 text-slate-400 flex flex-col justify-between " /* + " border-r border-slate-600" */
       }
     >
       <div
@@ -78,7 +78,7 @@ const LeftSidebar = () => {
           ))}
         </ul>
         <div className="py-3"></div>
-        <button className="sky-button-styling w-60 mx-2 p-4 rounded-full text-center  font-semibold">
+        <button className="sky-button-styling w-full p-4 rounded-full text-center  font-semibold">
           Tweet
         </button>
       </div>
