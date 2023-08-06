@@ -47,8 +47,8 @@ const MobileNav = (props: Props) => {
           )
       )}
 
-      <button className=" text-slate-400 rounded-full text-center hover-opaque">
-        <MdOutlinePostAdd className="w-11 h-11 " />
+      <button className=" rounded-full text-center text-BRAND hover-opaque">
+        <MdOutlinePostAdd className="w-10 h-10 " />
       </button>
 
       <UserButton />
