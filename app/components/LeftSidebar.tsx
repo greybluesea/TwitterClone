@@ -64,7 +64,9 @@ const LeftSidebar = () => {
           {navItemsArray.map((item) => (
             <li key={item.title} id={item.title}>
               <Link
-                href={`/${item.title}`}
+                href=/* {item.title === "home" ? "/" : `/${item.title}`} */ {
+                  "/"
+                }
                 className="flex items-center hover-bg-light py-3 px-8 rounded-full "
               >
                 <item.icon

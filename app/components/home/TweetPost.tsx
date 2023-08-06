@@ -1,6 +1,6 @@
 import React from "react";
 import { BsDot, BsThreeDots } from "react-icons/bs";
-import Avatar from "./Avatar";
+import Avatar from "../Avatar";
 import { AiOutlineRetweet } from "react-icons/ai";
 import { IoShareOutline, IoStatsChart } from "react-icons/io5";
 
@@ -20,7 +20,7 @@ const TweetPost = (props: Props) => {
           id="TweetHeader"
           className="flex items-center w-full justify-between"
         >
-          <p className="flex items-center space-x-1 w-full text-SECONDARY">
+          <p className="flex items-center w-full text-SECONDARY">
             <span id="username" className="font-bold text-PRIMARY truncate">
               {/* {tweet.userProfile.fullName ?? ""} */}
               username

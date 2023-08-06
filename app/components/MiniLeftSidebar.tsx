@@ -29,7 +29,7 @@ const MiniLeftSidebar = (props: Props) => {
           {navItemsArray.map((item) => (
             <li key={item.title} id={item.title}>
               <Link
-                href={`/${item.title.toLocaleLowerCase()}`}
+                href=/* {`/${item.title.toLocaleLowerCase()}`} */ {"/"}
                 className="flex items-center hover-bg-light p-4 rounded-full mx-auto"
               >
                 <item.icon

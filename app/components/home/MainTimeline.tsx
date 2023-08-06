@@ -1,4 +1,4 @@
-import TweetPost from "../TweetPost";
+import TweetPost from "./TweetPost";
 import TweetComposer from "./TweetComposer";
 
 type Props = {};
