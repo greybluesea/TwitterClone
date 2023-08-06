@@ -8,7 +8,7 @@ const MainTimeline = (props: Props) => {
     <div className="flex flex-col w-full h-full min-h-screen">
       <h1
         className={
-          "text-xl font-bold p-6 " /* + " sticky top-0 bg-slate-900 " */
+          "text-xl font-bold p-6 border-b border-BORDER " /* + " sticky top-0 bg-slate-900 " */
         }
       >
         Home

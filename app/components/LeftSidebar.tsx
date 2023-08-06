@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { AiFillHome } from "react-icons/ai";
 import { BsBookmarkStarFill, BsTwitter } from "react-icons/bs";
-import { FaEnvelope, FaMagnifyingGlass, FaUserLarge } from "react-icons/fa6";
+import {
+  FaHashtag,
+  FaEnvelope,
+  FaMagnifyingGlass,
+  FaUserLarge,
+} from "react-icons/fa6";
 
 import { GoBellFill } from "react-icons/go";
 import UserButton from "./UserButton";
@@ -13,7 +18,7 @@ export const navItemsArray = [
   },
   {
     title: "explore",
-    icon: FaMagnifyingGlass,
+    icon: /* FaMagnifyingGlass */ FaHashtag,
   },
   {
     title: "notifications",
@@ -62,7 +67,11 @@ const LeftSidebar = () => {
                 href={`/${item.title}`}
                 className="flex items-center hover-bg-light py-3 px-8 rounded-full "
               >
-                <item.icon className="w-9 h-9" />
+                <item.icon
+                  className={
+                    "w-9 h-9 " + (item.title === "explore" && "text-BRAND")
+                  }
+                />
                 <p className="pl-4">{capitalizeFirstLetter(item.title)}</p>
               </Link>
             </li>

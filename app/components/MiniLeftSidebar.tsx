@@ -1,15 +1,9 @@
 import Link from "next/link";
-import React from "react";
-import { AiFillHome } from "react-icons/ai";
-import { BsBookmarkStarFill, BsTwitter, BsThreeDots } from "react-icons/bs";
-import { FaEnvelope, FaMagnifyingGlass, FaUserLarge } from "react-icons/fa6";
-import { CgProfile } from "react-icons/cg";
+import { BsTwitter } from "react-icons/bs";
 
-import { GoBellFill } from "react-icons/go";
-import UserSection from "./UserButton";
+import { MdOutlinePostAdd } from "react-icons/md";
 import { navItemsArray } from "./LeftSidebar";
 import UserButton from "./UserButton";
-import { MdOutlinePostAdd } from "react-icons/md";
 
 type Props = {};
 
@@ -38,7 +32,11 @@ const MiniLeftSidebar = (props: Props) => {
                 href={`/${item.title.toLocaleLowerCase()}`}
                 className="flex items-center hover-bg-light p-4 rounded-full mx-auto"
               >
-                <item.icon className="w-8 h-8" />
+                <item.icon
+                  className={
+                    "w-8 h-8 " + (item.title === "explore" && "text-BRAND")
+                  }
+                />
               </Link>
             </li>
           ))}

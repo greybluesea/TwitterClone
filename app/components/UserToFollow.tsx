@@ -14,7 +14,7 @@ const UserToFollow = (props: Props) => {
       </div>
 
       <div className=" flex flex-col justify-center truncate">
-        <p className="font-bold leading-5  truncate ">Other User Other User</p>
+        <p className="font-bold leading-5  truncate ">OtherUser OtherUser</p>
         <p className="leading-5  before:content-['@'] truncate">
           otheruser1232 Other User Other User
         </p>

@@ -6,8 +6,8 @@ const TweetComposer = (props: Props) => {
   return (
     <section
       id="Tweet composer"
-      className="border-y px-4 flex items-start pb-3 space-x-2
-       border-slate-600 h-full max-h-[140px]"
+      className="border-b border-BORDER px-4 flex items-start pb-3 space-x-2
+       h-full max-h-[140px]"
     >
       <div className="mt-2">
         <Avatar />
@@ -16,7 +16,7 @@ const TweetComposer = (props: Props) => {
         <input
           type="text"
           name="tweet"
-          className="w-full text-lg placeholder:text-slate-600 bg-transparent py-3.5 px-2 outline-none border-none"
+          className="w-full text-lg placeholder:text-BORDER bg-transparent py-3.5 px-2 outline-none border-none"
           placeholder="What's happening?"
           autoFocus
         />

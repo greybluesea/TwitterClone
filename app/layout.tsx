@@ -32,7 +32,7 @@ export default function RootLayout({
         >
           <aside
             id="leftColumn"
-            className="sticky h-full bottom-0 top-0  border-r border-slate-600"
+            className="sticky h-full bottom-0 top-0   border-slate-600"
           >
             <div className="hidden sm:flex lg:hidden ">
               <MiniLeftSidebar />

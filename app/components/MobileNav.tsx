@@ -38,7 +38,11 @@ const MobileNav = (props: Props) => {
               href={`/${item.title.toLocaleLowerCase()}`}
               className="hover-bg-light rounded-full"
             >
-              <item.icon className="w-8 h-8" />
+              <item.icon
+                className={
+                  "w-8 h-8 " + (item.title === "explore" && "text-BRAND")
+                }
+              />
             </Link>
           )
       )}

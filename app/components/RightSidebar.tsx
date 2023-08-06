@@ -9,7 +9,7 @@ const RightSidebar = (props: Props) => {
   return (
     <aside
       id="rightColumn"
-      className="w-[320px] text-SECONDARY sticky h-full min-h-screen bottom-0 top-0 hidden md:flex flex-col border-l  border-slate-600 overflow-y-auto px-2 py-4"
+      className="w-[320px] text-SECONDARY sticky h-full min-h-screen bottom-0 top-0 hidden md:flex flex-col  border-slate-600 overflow-y-auto px-2 py-4"
     >
       <section
         id="searchBox on RightSidebar"
